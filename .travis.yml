@@ -12,6 +12,6 @@ install:
   - pip install -q django==$DJANGO_VERSION
   - pip install coveralls
 script:
-  - env PYTHONPATH=`pwd` coverage run --source=django_images example/manage.py test
+  - env PYTHONPATH=`pwd` coverage run --source=django_image example/manage.py test
 after_success:
   coveralls

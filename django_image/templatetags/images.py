@@ -1,5 +1,5 @@
 from django import template
-from django_images import settings
+from django_image import settings
 
 register = template.Library()
 

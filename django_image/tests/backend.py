@@ -1,4 +1,4 @@
-from django_images.backend import Backend
+from django_image.backend import Backend
 
 
 class DummyBackend(Backend):

@@ -3,7 +3,7 @@
 from os.path import exists
 from setuptools import setup, find_packages
 
-from django_images import __version__
+from django_image import __version__
 
 setup(
     name='django-image',
@@ -11,7 +11,7 @@ setup(
     # Your name & email here
     author='Adam Charnock',
     author_email='adam@adamcharnock.com',
-    # If you had django_images.tests, you would also include that in this list
+    # If you had django_image.tests, you would also include that in this list
     packages=find_packages(),
     # Any executable scripts, typically in 'bin'. E.g 'bin/do-something.py'
     scripts=[],

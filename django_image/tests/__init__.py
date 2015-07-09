@@ -1,4 +1,4 @@
 from django.conf import settings
 
 
-settings.IMAGES_BACKEND = 'django_images.tests.backend.DummyBackend'
+settings.IMAGES_BACKEND = 'django_image.tests.backend.DummyBackend'

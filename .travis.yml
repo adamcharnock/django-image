@@ -4,11 +4,7 @@ python:
   - "3.3"
   - "3.2"
   - "2.7"
-  - "2.6"
 env:
-  - DJANGO_VERSION=1.4.20
-  - DJANGO_VERSION=1.5.12
-  - DJANGO_VERSION=1.6.11
   - DJANGO_VERSION=1.7.8
   - DJANGO_VERSION=1.8.2
 install:
@@ -19,15 +15,3 @@ script:
   - env PYTHONPATH=`pwd` coverage run --source=django_images example/manage.py test
 after_success:
   coveralls
-matrix:
-  exclude:
-    - python: "3.4"
-      env: DJANGO_VERSION=1.4.20
-    - python: "3.3"
-      env: DJANGO_VERSION=1.4.20
-    - python: "3.2"
-      env: DJANGO_VERSION=1.4.20
-    - python: "2.6"
-      env: DJANGO_VERSION=1.7.8
-    - python: "2.6"
-      env: DJANGO_VERSION=1.8.2

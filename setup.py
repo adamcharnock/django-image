@@ -20,7 +20,7 @@ setup(
     # Put your license here. See LICENSE.txt for more information
     license='MIT',
     # Put a nice one-liner description here
-    description='Simple plugable framework for displaying images in Django',
+    description='Simple pluggable framework for displaying images in Django',
     long_description=open('README.rst').read() if exists("README.rst") else "",
     # Any requirements here, e.g. "Django >= 1.1.1"
     install_requires=[

@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 from django_images import __version__
 
 setup(
-    name='django-images',
+    name='django-image',
     version=__version__,
     # Your name & email here
     author='Adam Charnock',
@@ -16,7 +16,7 @@ setup(
     # Any executable scripts, typically in 'bin'. E.g 'bin/do-something.py'
     scripts=[],
     # REQUIRED: Your project's URL
-    url='http://github.com/adamcharnock/django-images',
+    url='http://github.com/adamcharnock/django-image',
     # Put your license here. See LICENSE.txt for more information
     license='MIT',
     # Put a nice one-liner description here

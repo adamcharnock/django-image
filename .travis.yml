@@ -12,11 +12,11 @@ env:
   - DJANGO_VERSION=1.7.8
   - DJANGO_VERSION=1.8.2
 install:
+  - pip install .
   - pip install -q django==$DJANGO_VERSION
-  - pip install -q -r example/requirements.txt
   - pip install coveralls
 script:
-  - env PYTHONPATH=`pwd` coverage run --source=django_su example/manage.py test django_su
+  - env PYTHONPATH=`pwd` coverage run --source=django_images example/manage.py test
 after_success:
   coveralls
 matrix:
